@@ -27,12 +27,20 @@ function sum(dob)
 
 function testLuck(sumOfDigits,luckyNumber)
 {
-    if(sumOfDigits%luckyNumber.value === 0)
+    if(sumOfDigits && luckyNumber.value)
     {
-        result.innerText="Yayy🥳Your Birthday is Lucky";
+        if(sumOfDigits%luckyNumber.value === 0)
+        {
+            result.innerText="Yayy🥳Your Birthday is Lucky";
+        }
+        else
+        {
+            result.innerText="Uff your Birthday is not sooo lucky it seems😭";
+        }
     }
     else
     {
-        result.innerText="Uff your Birthday is not sooo lucky it seems😭";
+        result.innerText="Please fill all the fields";
     }
+
 }
