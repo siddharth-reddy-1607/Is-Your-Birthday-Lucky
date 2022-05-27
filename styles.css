@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;1,700&display=swap');
+:root
+{
+    --primary-colour:#1f2937;
+    --text-color:#6EE7b7;
+}
+
+*{
+    margin: 0;
+    background-color: var(--primary-colour);
+    color: var(--text-color);
+    font-family: 'Noto Sans', sans-serif;
+    overflow: auto;
+}
+.container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50%;
+}
+
+
+label
+{
+    margin-top: 1rem;
+    max-height: 25px;
+}
+
+#dob
+{
+    min-width: 100px;
+    max-width: 200px;
+    padding:0;
+    max-height: 25px;
+    background-color: white;
+    color: black;
+}
+
+#lucky-num
+{
+    min-width: 100px;
+    max-width: 200px;
+    padding:0;
+    max-height: 25px;
+    background-color: white;
+    color: black;
+}
+
+button
+{
+    max-height: 25px;
+    margin: 1rem;
+    background-color: white;
+    color: black;
+}
+ul
+{
+    list-style: none;
+    padding: 0;
+}
+li 
+{
+    display: inline;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+a
+{
+    text-decoration: none;
+}
+footer
+{
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding-top: 0.5rem;
+    width: 100%;
+}
+
+footer div
+{
+    padding-top: 1rem;
+    margin:0.25rem;
+}
